@@ -8,12 +8,7 @@ $rooms = [
         new Room(3, 'Woonkamer')
 ];
 
-if (isPostRequest()) {
-    if (isset($_POST['room_id'])){
-        d($_POST['room_id']);
-        $_SESSION['player']['current_room'] = (int)$_POST['room_id'];
-    }
-}
+
 
 
 
